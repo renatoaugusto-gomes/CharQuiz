@@ -1,0 +1,74 @@
+<!-- index.html(página inicial) -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/21ff378ce1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CharQuiz</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>CharQuiz</h1>
+            </div>
+
+            <div class="menu">
+                <ul class="menu-itens">
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-plus"></i>
+                        <a href="about.html">Criar</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-compass"></i>
+                        <a href="contact.html">Explorar</a>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="barra-de-pesquisa">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="pesquisar" type="text" placeholder="Pesquisar">
+            </form>
+
+            <div class="login">
+                <ul class="login-itens">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="explorar">
+        <ul class="explorar-itens">
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="characters.html">Personagem</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="content">
+            <h2>Em Alta</h2>
+            <div class="alta-grid"></div>
+            <!--Inserir dados com js-->
+
+            <h2>Em Destaque</h2>
+            <div class="destaque-grid"></div>
+            <!--Inserir dados com js-->
+        </section>
+    </main>
+</body>
+
+<script src="./scripts.js"></script>
+
+</html>

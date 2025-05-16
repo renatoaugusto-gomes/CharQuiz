@@ -1,0 +1,361 @@
+/* Reset e fonte padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fffaf9;
+    color: #5a2e2e;
+}
+
+/* Container principal */
+.container {
+    background-color: #eee1e1;
+    padding: 20px 30px;
+    border-bottom: 1px solid #e0d0d0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #eee1e1;
+    color: #5a2e2e;
+}
+
+.logo h1 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #a14f4f;
+}
+
+/* Menu e login */
+.menu-itens, .login-itens {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.menu-itens a, .login-itens a {
+    text-decoration: none;
+    color: #5a2e2e;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu-itens a:hover, .login-itens a:hover {
+    color: #a14f4f;
+}
+
+/* Barra de pesquisa */
+.barra-de-pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pesquisar {
+    padding: 6px 14px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+/* Explorar */
+.explorar-itens {
+    display: flex;
+    gap: 12px;
+    padding: 16px 20px;
+    list-style: none;
+}
+
+.explorar-itens a {
+    padding: 8px 18px;
+    background-color: #fffaf9;
+    border: 2px solid #d6b1b1;
+    border-radius: 30px;
+    color: #5a2e2e;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.explorar-itens a:hover {
+    background-color: #d6b1b1;
+    color: #fffaf9;
+}
+
+/* Conteúdo principal */
+.content {
+    padding: 30px 20px;
+}
+
+.content h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #5a2e2e;
+}
+
+/* Grids */
+.alta-grid, .destaque-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+/* Cards */
+.card {
+    background-color: #fffaf9;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    padding: 14px;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin: 12px 0 4px;
+    color: #5a2e2e;
+}
+
+.card p {
+    font-size: 14px;
+    color: #7a5555;
+    margin-bottom: 10px;
+}
+
+/* Botões char/quiz */
+.char-card,
+.quiz-card {
+    background-color: #d6b1b1;
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.char-card:hover,
+.quiz-card:hover {
+    background-color: #a14f4f;
+}
+
+/* princesas disney */
+
+#quiz-form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+fieldset {
+    border: 2px solid #d6b1b1;
+    border-radius: 12px;
+    padding: 16px;
+    background-color: #fffaf9;
+}
+
+legend {
+    font-weight: 600;
+    color: #a14f4f;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #5a2e2e;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+#submit-btn {
+    background-color: #d6b1b1;
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    display: block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: #a14f4f;
+}
+
+#resultado {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #5a2e2e;
+}
+
+.pergunta-img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* tela de resultado */
+
+.modal {
+  display: none; /* Escondido por padrão */
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fffaf9;
+  margin: 10% auto;
+  padding: 20px;
+  border: 2px solid #d6b1b1;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.fechar {
+  color: #a14f4f;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  cursor: pointer;
+}
+
+/* Tabela de Ranking */
+.titulo {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #5a2e2e;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.ranking-table {
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fffaf9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border: 2px solid #d6b1b1;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.ranking-table thead {
+    background-color: #d6b1b1;
+    color: #fffaf9;
+}
+
+.ranking-table th,
+.ranking-table td {
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid #e0d0d0;
+    font-size: 15px;
+    color: #5a2e2e;
+}
+
+.ranking-table tbody tr:nth-child(even) {
+    background-color: #f5eaea;
+}
+
+/* Raridades com cores ajustadas */
+.comum {
+    background-color: #c8e6c9; /* verde suave */
+    font-weight: 600;
+    color: #2e7d32;
+}
+
+.incomum {
+    background-color: #e8f5e9; /* verde bem claro */
+    font-weight: 600;
+    color: #33691e;
+}
+
+.raro {
+    background-color: #b2ebf2; /* azul ciano claro */
+    font-weight: 600;
+    color: #006064;
+}
+
+.epico {
+    background-color: #e1bee7; /* roxo claro */
+    font-weight: 600;
+    color: #6a1b9a;
+}
+
+.mitico {
+    background-color: #ffcdd2; /* vermelho claro */
+    font-weight: 600;
+    color: #b71c1c;
+}
+
+.exotico {
+    background-color: #ffe0b2; /* laranja claro */
+    font-weight: 600;
+    color: #e65100;
+}
+
+.lendario {
+    background-color: #fff8b0; /* dourado claro */
+    font-weight: bold;
+    color: #8d6e00;
+}
+
+.lendario-plus {
+    background: linear-gradient(135deg, #ffffff, #ccf2f4, #fce4ec); /* branco, azul ciano bebê, rosa claro */
+    font-weight: bold;
+    color: #5a2e2e;
+}

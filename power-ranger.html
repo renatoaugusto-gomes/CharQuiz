@@ -1,0 +1,104 @@
+<!-- power-ranger.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/21ff378ce1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>CharQuiz | Quem é você?</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>CharQuiz</h1>
+            </div>
+
+            <div class="menu">
+                <ul class="menu-itens">
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-plus"></i>
+                        <a href="about.html">Criar</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-compass"></i>
+                        <a href="contact.html">Explorar</a>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="barra-de-pesquisa">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="pesquisar" type="text" placeholder="Pesquisar">
+            </form>
+
+            <div class="login">
+                <ul class="login-itens">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <h2 class="titulo">🥇 Ranking do Mais Comum ao Mais Raro</h2>
+
+<table class="ranking-table">
+  <thead>
+    <tr>
+      <th>Personagens</th>
+      <th>Raridade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tommy, Sky, Nick</td>
+      <td class="comum">Comum</td>
+    </tr>
+    <tr>
+      <td>Carter, Jason, Shane, Conner</td>
+      <td class="incomum">Incomum</td>
+    </tr>
+    <tr>
+      <td>Andros, Mack, Jack, TJ, Casey</td>
+      <td class="raro">Raro</td>
+    </tr>
+    <tr>
+      <td>Leo</td>
+      <td class="epico">Épico</td>
+    </tr>
+    <tr>
+      <td>Cole, Wes</td>
+      <td class="lendario">Lendário</td>
+    </tr>
+  </tbody>
+</table>
+
+    <main class="content">
+        <h1 id="quiz-title">Carregando quiz...</h1>
+        <form id="quiz-form"></form>
+        <button id="submit-btn">Ver Resultado</button>
+        <div id="resultado"></div>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="fechar-modal" class="fechar">&times;</span>
+            <h2 id="modal-nome"></h2>
+            <img id="modal-img" src="" alt="Imagem do power ranger">
+        </div>
+    </div>
+
+
+    <script type="module" src="./scripts/power-quiz.js"></script>
+</body>
+
+</html>
